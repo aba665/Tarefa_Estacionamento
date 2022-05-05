@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Estacionamento</title>
+</head>
+<body>
+    <h1>Sistema de Estacionamento</h1> 
+    <div class="container">
+        <div class="insertionContent">
+            <input id="nomeCarro" type="text" placeholder="Nome do carro">
+            <input id="placaCarro" type="text" placeholder="Placa do carro">
+            <button class="btnRegister" onclick="newRegister()">Cadastrar</button>
+        </div>
+        <div class="tableData">
+            <h2>Gerenciamento de entradas do estacionamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Placa</td>
+                        <td>Entrada</td>
+                    </tr>
+                </thead>
+                <tbody id="boxContent">
+                   
+                </tbody>
+
+            </table>
+
+        </div>
+        <div class="tableData">
+            <h2>Gerenciamento de saída do estacionamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Placa</td>
+                        <td>Entrada</td>
+                        <td>Saída</td>
+                    </tr>
+                </thead>
+                <tbody id="boxContentExit">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
